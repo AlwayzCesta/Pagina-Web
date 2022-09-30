@@ -119,4 +119,4 @@ public class Usuario {
     @Override
     public String toString() {
         return "Usuario{" + "idCliente=" + idCliente + ", username=" + username + ", contrasena=" + contrasena + ", rolAdministrador=" + rolAdministrador + ", nombres=" + nombres + ", apellidos=" + apellidos + ", email=" + email + ", pais=" + pais + ", ciudad=" + ciudad + ", direccion=" + direccion + ", telefono=" + telefono + '}';
-    }
+    }}
