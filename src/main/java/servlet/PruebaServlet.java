@@ -25,8 +25,8 @@ public class PruebaServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            String id = request.getParameter("id");
-            String name = request.getParameter("name");
+            String referencia = request.getParameter("referencia");
+            String precio = request.getParameter("precio");
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -34,7 +34,7 @@ public class PruebaServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1> PRUEBAS </h1>");
-            response.getWriter().append("El id que fue recibido es: "+id+" y el nombre de la pelicula es: "+name);
+            response.getWriter().append("La refencia del producto es: "+referencia+" el precio es: "+precio);
             out.println("</body>");
             out.println("</html>");
         }

@@ -3,6 +3,8 @@ package beans;
 
 public class Usuario {
     private int idCliente;
+    private String username;
+    private String contrasena;
     private boolean rolAdministrador;
     private String nombres;
     private String apellidos;
@@ -12,8 +14,10 @@ public class Usuario {
     private String direccion;
     private String telefono;
 
-    public Usuario(int idCliente, boolean rolAdministrador, String nombres, String apellidos, String email, String pais, String ciudad, String direccion, String telefono) {
+    public Usuario(int idCliente, String username, String contrasena, boolean rolAdministrador, String nombres, String apellidos, String email, String pais, String ciudad, String direccion, String telefono) {
         this.idCliente = idCliente;
+        this.username = username;
+        this.contrasena = contrasena;
         this.rolAdministrador = rolAdministrador;
         this.nombres = nombres;
         this.apellidos = apellidos;
@@ -30,6 +34,22 @@ public class Usuario {
 
     public void setIdCliente(int idCliente) {
         this.idCliente = idCliente;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 
     public boolean isRolAdministrador() {
@@ -98,8 +118,5 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" + "idCliente=" + idCliente + ", rolAdministrador=" + rolAdministrador + ", nombres=" + nombres + ", apellidos=" + apellidos + ", email=" + email + ", pais=" + pais + ", ciudad=" + ciudad + ", direccion=" + direccion + ", telefono=" + telefono + '}';
+        return "Usuario{" + "idCliente=" + idCliente + ", username=" + username + ", contrasena=" + contrasena + ", rolAdministrador=" + rolAdministrador + ", nombres=" + nombres + ", apellidos=" + apellidos + ", email=" + email + ", pais=" + pais + ", ciudad=" + ciudad + ", direccion=" + direccion + ", telefono=" + telefono + '}';
     }
-    
-    
-}
