@@ -3,13 +3,13 @@ import java.sql.Date;
 
 public class Orden {
     private int idOrden;
-    private int idCliente;
+    private String username;
     private String estado;
     private Date fechaCompra;
 
-    public Orden(int idOrden, int idCliente, String estado, Date fechaCompra) {
+    public Orden(int idOrden, String username, String estado, Date fechaCompra) {
         this.idOrden = idOrden;
-        this.idCliente = idCliente;
+        this.username = username;
         this.estado = estado;
         this.fechaCompra = fechaCompra;
     }
@@ -22,12 +22,12 @@ public class Orden {
         this.idOrden = idOrden;
     }
 
-    public int getIdCliente() {
-        return idCliente;
+    public String getUsername() {
+        return username;
     }
 
-    public void setIdCliente(int idCliente) {
-        this.idCliente = idCliente;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getEstado() {
@@ -48,8 +48,10 @@ public class Orden {
 
     @Override
     public String toString() {
-        return "Orden{" + "idOrden=" + idOrden + ", idCliente=" + idCliente + ", estado=" + estado + ", fechaCompra=" + fechaCompra + '}';
+        return "Orden{" + "idOrden=" + idOrden + ", username=" + username + ", estado=" + estado + ", fechaCompra=" + fechaCompra + '}';
     }
+
+    
     
     
     

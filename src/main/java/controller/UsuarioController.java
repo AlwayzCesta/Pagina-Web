@@ -23,18 +23,16 @@ public class UsuarioController implements IUsuarioController {
             ResultSet rs = st.executeQuery(sql);
 
             while (rs.next()) {
-                int idCliente = rs.getInt("idCliente");
+                
                 boolean rolAdministrador = rs.getBoolean("rolAdministrador");
                 String nombres = rs.getString("nombres");
                 String apellidos = rs.getString("apellidos");
                 String email = rs.getString("email");
-                String pais = rs.getString("pais");
-                String ciudad = rs.getString("ciudad");
                 String direccion = rs.getString("direccion");
                 String telefono = rs.getString("telefono");
 
                 Usuario usuario
-                        = new Usuario(idCliente,username, contrasena, rolAdministrador, nombres, apellidos, email, pais, ciudad, direccion, telefono);
+                        = new Usuario(username, contrasena, rolAdministrador, nombres, apellidos, email, direccion, telefono);
 
                 return gson.toJson(usuario);
             }
@@ -46,5 +44,43 @@ public class UsuarioController implements IUsuarioController {
 
         return "false";
     }
+
+    @Override
+    public String register(String username, String contrasena, String nombres, String apellidos, String email, String direccion, String telefono) {
+        
+        
+        
+       Gson gson = new Gson();
+
+        DBConnection con = new DBConnection();
+        
+        
+        String sql = "Insert into usuario values('" + username + "', '" + contrasena + "','0', '" + nombres
+                + "', '" + apellidos + "', '" + email + "', '" + direccion + "', '" + telefono + "')";
+        
+
+        try {
+            Statement st = con.getConnection().createStatement();
+            st.executeUpdate(sql);
+
+            boolean rolAdministrador = false;
+            
+            Usuario usuario = new Usuario(username, contrasena, rolAdministrador, nombres, apellidos, email, direccion, telefono);
+
+            st.close();
+
+            return gson.toJson(usuario);
+             
+  
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+
+        } finally {
+            con.desconectar();
+        }
+
+        return "false";
+    }
+    
 
 }

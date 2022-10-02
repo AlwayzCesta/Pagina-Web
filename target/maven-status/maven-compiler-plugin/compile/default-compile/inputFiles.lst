@@ -2,7 +2,9 @@ C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\test\Operacione
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\beans\Usuario.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\connection\DBConnection.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\controller\IUsuarioController.java
+C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\servlet\ServletUsuarioLogin.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\servlet\PruebaServlet.java
+C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\servlet\ServletUsuarioRegister.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\controller\UsuarioController.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\beans\DetalleOrden.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\beans\Orden.java

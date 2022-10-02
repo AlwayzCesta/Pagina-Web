@@ -1,9 +1,11 @@
 beans\DetalleOrden.class
 servlet\PruebaServlet.class
+servlet\ServletUsuarioLogin.class
 beans\Usuario.class
 controller\UsuarioController.class
 beans\Orden.class
 controller\IUsuarioController.class
+servlet\ServletUsuarioRegister.class
 test\OperacionesBD.class
 beans\Producto.class
 connection\DBConnection.class
