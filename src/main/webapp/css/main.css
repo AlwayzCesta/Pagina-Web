@@ -1,0 +1,48 @@
+.container-3{
+  width: 250px;
+  vertical-align: middle;
+  margin-top: 7px;
+  padding-left: 50px;
+  
+  position: relative;
+}
+ 
+.container-3 input#search{
+  width: 250px;
+  height: 30px;
+  background: #FFFFFF;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #7868B3;
+  padding-left: 45px;
+
+  border-radius: 15px;
+  color: #7868B3;
+}
+
+.container-3 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 8px;
+  z-index: 1;
+  color: #7868B3;
+ 
+
+}
+
+.campo-2{
+    padding-left: 100px;
+    
+}
+.nav-link{
+
+  
+    margin-top: 7px;
+    
+}
+.nau-item{
+    padding-left: 100px;
+    padding-right: 100px;
+}

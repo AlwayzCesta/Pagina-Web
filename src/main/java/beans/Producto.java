@@ -5,19 +5,19 @@ public class Producto {
     private String referencia;
     private String nombreProducto;
     private String categoria;
-    private String descripcion;
     private double precio;
     private int unidadesDisponibles;
 
-    public Producto(int idProducto, String referencia, String nombreProducto, String categoria, String descripcion, double precio, int unidadesDisponibles) {
+    public Producto(int idProducto, String referencia, String nombreProducto, String categoria, double precio, int unidadesDisponibles) {
         this.idProducto = idProducto;
         this.referencia = referencia;
         this.nombreProducto = nombreProducto;
         this.categoria = categoria;
-        this.descripcion = descripcion;
         this.precio = precio;
         this.unidadesDisponibles = unidadesDisponibles;
     }
+
+    
 
     public int getIdProducto() {
         return idProducto;
@@ -51,14 +51,6 @@ public class Producto {
         this.categoria = categoria;
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
     public double getPrecio() {
         return precio;
     }
@@ -77,8 +69,9 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Producto{" + "idProducto=" + idProducto + ", referencia=" + referencia + ", nombreProducto=" + nombreProducto + ", categoria=" + categoria + ", descripcion=" + descripcion + ", precio=" + precio + ", unidadesDisponibles=" + unidadesDisponibles + '}';
+        return "Producto{" + "idProducto=" + idProducto + ", referencia=" + referencia + ", nombreProducto=" + nombreProducto + ", categoria=" + categoria + ", precio=" + precio + ", unidadesDisponibles=" + unidadesDisponibles + '}';
     }
+
     
     
 }

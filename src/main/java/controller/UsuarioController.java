@@ -81,6 +81,66 @@ public class UsuarioController implements IUsuarioController {
 
         return "false";
     }
+    @Override
+    public String pedir(String username) {
+
+        Gson gson = new Gson();
+
+        DBConnection con = new DBConnection();
+        String sql = "Select * from usuario where username = '" + username + "'";
+
+        try {
+
+            Statement st = con.getConnection().createStatement();
+            ResultSet rs = st.executeQuery(sql);
+
+            while (rs.next()) {
+                
+                boolean rolAdministrador = rs.getBoolean("rolAdministrador");
+                String nombres = rs.getString("nombres");
+                String contrasena = rs.getString("contrasena");
+                String apellidos = rs.getString("apellidos");
+                String email = rs.getString("email");
+                String direccion = rs.getString("direccion");
+                String telefono = rs.getString("telefono");
+                Usuario usuario = new Usuario(username, contrasena, rolAdministrador, nombres, apellidos, email, direccion, telefono);
+
+                return gson.toJson(usuario);
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        } finally {
+            con.desconectar();
+        }
+
+        return "false";
+    }
+    public String modificar(String username,String contrasena,String email,String direccion,String telefono) {
+
+        DBConnection con = new DBConnection();
+
+        String sql = "Update usuario set contrasena = '" + contrasena
+                +  "', email = '"+ email + "' , direccion = '"+direccion+"', telefono= '"+telefono+ "' where username = '" + username + "'";
+
+       
+
+       
+
+        try {
+
+            Statement st = con.getConnection().createStatement();
+            st.executeUpdate(sql);
+
+            return "true";
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        } finally {
+            con.desconectar();
+        }
+
+        return "false";
+
+    }
     
 
 }
