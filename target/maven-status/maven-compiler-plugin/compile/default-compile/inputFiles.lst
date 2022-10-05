@@ -5,6 +5,7 @@ C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\controller\Usua
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\beans\DetalleOrden.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\controller\IDetalleOrdenController.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\servlet\ServletProductoListar.java
+C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\servlet\ServletPagar.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\servlet\ServletUsuarioPedir.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\controller\ProductoController.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\servlet\ServletComprar.java
@@ -14,3 +15,4 @@ C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\servlet\PruebaS
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\servlet\ServletUsuarioRegister.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\controller\IProductoController.java
 C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\beans\Producto.java
+C:\Users\Mailo\Documents\NetBeansProjects\KeyMaker\src\main\java\servlet\ServletUsuarioModificar.java
